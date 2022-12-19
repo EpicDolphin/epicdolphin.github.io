@@ -7,7 +7,7 @@
 body {background-color: black}
 h1 {color: white; text-align: center; font-family: Arial,sans-serif}
 h2 {color: white; text-align: center; font-family: Arial,sans-serif}
-p {color: white; text-align: center; text-size: 20; font-family: Arial,sans-serif}
+p {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif}
 ul {color: white; text-align: center; text-size: 20; font-family: Arial,sans-serif}
 img {position: relative;
     top: opx;
@@ -18,7 +18,8 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
-        alert("Hello");
+        var password = document.getElementById("BOX");
+        var passwordText = password.value;
     }
 </script>
 </head>
@@ -27,10 +28,7 @@ img {position: relative;
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
 <input type="button" value="Alert" onclick="Run();"></input>
-/*<a href="Minecraft.html"> <img src="Minecraft.jfif"></a> <br>
 
-<p> <font color = "white">This is my Scratch Profile!</p> 
-<a id=scratch_website href="https://scratch.mit.edu/users/AmirLabScratch/"> <img src="Scratch Logo.png"></a> <br>*/
 <ul>
 <li><a href="index.html"> <font color = "White"> Main Webpage </a> <br></li><br>
 </ul>
