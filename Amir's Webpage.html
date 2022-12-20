@@ -19,8 +19,8 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
-        var text = document.getElementById('BOX').textContent;
-        document.getElementById('a').innerHTML = text;
+        var text = document.getElementById('a').textContent;
+        alert(text);
     }
 </script>
 </head>
@@ -28,7 +28,7 @@ img {position: relative;
 <body bgcolor = "black" onload="Run()">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
-<p id='a'></p>
+<div id='a'>Hello</div>
 <button type="button" id = "B1" onclick="Run()"> Continue</button>
     
 
