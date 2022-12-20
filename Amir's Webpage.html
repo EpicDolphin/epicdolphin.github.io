@@ -19,20 +19,22 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
+        var a = document.getElementById("link");
         var password = document.getElementById("BOX");
         var passwordText = password.value;
         if (passwordText = "Minecraft100") {
-            return true;
+            x.style.display = "block";
+    }   else {
+            x.style.display = "none";
     }
-        alert("Error");
-        return false;
 </script>
 </head>
 
 <body bgcolor = "black">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
-<a href="https://github.com" onclick=false>Continue</a>
+<input type="button" value="Continue" command="Run();"></input>
+<a href="https://github.com" id="link" onclick=false>Continue</a>
 
 <ul>
 <li><a href="index.html"> <font color = "White"> Main Webpage </a> <br></li><br>
