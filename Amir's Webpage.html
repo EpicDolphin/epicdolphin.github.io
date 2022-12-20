@@ -22,19 +22,15 @@ img {position: relative;
     function Run() {
         var text = document.getElementById("BOX").value;
         var b = document.getElementById("Number").value;
-        if (b == '1') {
+        if (localStorage.getItem('a') == '') {
             localStorage.setItem('a', text);
-        }
-        if (b == '2') {
+        } else if (localStorage.getItem('b') == '') {
             localStorage.setItem('b', text);
-        }
-        if (b == '3') {
+        } else if (localStorage.getItem('c') == '') {
             localStorage.setItem('c', text);
-        }
-        if (b == '4') {
+        } else if (localStorage.getItem('d') == '') {
             localStorage.setItem('d', text);
-        }
-        if (b == '5') {
+        } else if (localStorage.getItem('e') == '') {
             localStorage.setItem('e', text);
         }
         document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
