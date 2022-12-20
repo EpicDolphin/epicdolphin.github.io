@@ -21,19 +21,19 @@ img {position: relative;
     function Run() {
         var text = document.getElementById("BOX").value;
         var b = document.getElementById("Number").value;
-        if (b == 1) {
+        if (b == '1') {
             localStorage.setItem('a', text);
         }
-        if (b == 2) {
+        if (b == '2') {
             localStorage.setItem('b', text);
         }
-        if (b == 3) {
+        if (b == '3') {
             localStorage.setItem('c', text);
         }
-        if (b == 4) {
+        if (b == '4') {
             localStorage.setItem('d', text);
         }
-        if (b == 5) {
+        if (b == '5') {
             localStorage.setItem('e', text);
         }
         document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
@@ -70,8 +70,8 @@ img {position: relative;
 
 <body bgcolor = "black" onload="Run()">
 <h1> <font color = "white">GitHub</h1>
-<p> <font color = "white">Password: <input id="BOX"></input></p>
-<p> <font color = "white">Password: <input id="Number"></input></p>
+<p> <font color = "white">Text: <input id="BOX"></input></p>
+<p> <font color = "white">Number: <input id="Number"></input></p>
 
 <button type="button" id = "B1" onclick="Run()"> Add</button>
 <button type="button" id = "B2" onclick="Run2()"> Clear</button>
