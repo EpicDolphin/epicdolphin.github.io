@@ -8,7 +8,7 @@ body {background-color: black}
 h1 {color: white; text-align: center; font-family: Arial,sans-serif}
 h2 {color: white; text-align: center; font-family: Arial,sans-serif}
 p {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif}
-a {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif}
+a {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif; visibility:'hidden'}
 ul {color: white; text-align: center; text-size: 20; font-family: Arial,sans-serif}
 img {position: relative;
     top: opx;
@@ -20,9 +20,10 @@ img {position: relative;
 <script>
     function Run() {
        var a = document.getElementById('demo');
+       var b = document.getElementById('demo');
+       var password = b.value;
        a.style.visibility = 'hidden';
-       var b = "Hi";
-       if (b=="Hi") {
+       if (password='Minecraft100') {
            var a = document.getElementById('demo');
            a.style.visibility = 'visible';
     }
@@ -37,7 +38,7 @@ onclick="Run()">
 Continue</button>
 <a href='https://github.com/' id='demo'>GitHub</a>
 <ul>
-<li><a href="index.html"> <font color = "White"> Main Webpage </a> <br></li><br>
+<li><a href="index.html"> <font color = "White" > Main Webpage </a> <br></li><br>
 </ul>
 
 
