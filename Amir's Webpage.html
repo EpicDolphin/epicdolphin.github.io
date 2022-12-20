@@ -19,16 +19,12 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
-       var a = document.createElement('a');
-       var linkText = document.createTextNode("my title text");
-       a.appendChild(linkText);
-       a.title = "my title text";
-       a.href = "https://github.com";
-       document.body.appendChild(a);
+       var a = document.getElementById('demo');
+       a.style.visibility = 'hidden';
        var b = "Hi";
        if (b=="Hi") {
-          document.getElementById('demo').innerHTML=href = <a href="https://github.com">Continue</a>;
-       }
+           var a = document.getElementById('demo');
+           a.style.visibility = 'visible';
     }
 </script>
 </head>
@@ -39,7 +35,7 @@ img {position: relative;
 <button type="button"
 onclick="Run()">
 Continue</button>
-<p id="demo"></p>
+<a href='https://github.com/' id='demo'>GitHub</a>
 <ul>
 <li><a href="index.html"> <font color = "White"> Main Webpage </a> <br></li><br>
 </ul>
