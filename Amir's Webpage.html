@@ -27,7 +27,7 @@ img {position: relative;
         var password = document.getElementById("BOX");
         var passwordText = password.value;
         if (passwordText == "Minecraft100") {
-            document.body.appendChild(a); 
+            document.getElementById('demo').innerHTML=href = "https://github.com";
     }
 </script>
 </head>
@@ -35,8 +35,11 @@ img {position: relative;
 <body bgcolor = "black">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
-<input type="button" value="Continue" onclick="Run();"></input>
-
+<button type="button"
+onclick="document.getElementById('demo').innerHTML=
+Date()">
+Continue</button>
+<p id="demo"></p>
 <ul>
 <li><a href="index.html"> <font color = "White"> Main Webpage </a> <br></li><br>
 </ul>
