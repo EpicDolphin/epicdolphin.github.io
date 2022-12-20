@@ -20,8 +20,50 @@ img {position: relative;
 <script>
     function Run() {
         var text = document.getElementById("BOX").value;
-        localStorage.setItem('a', text);
+        var b = document.getElementById("Number").value;
+        if (b == 1) {
+            localStorage.setItem('a', text);
+        }
+        if (b == 2) {
+            localStorage.setItem('b', text);
+        }
+        if (b == 3) {
+            localStorage.setItem('c', text);
+        }
+        if (b == 4) {
+            localStorage.setItem('d', text);
+        }
+        if (b == 5) {
+            localStorage.setItem('e', text);
+        }
         document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
+        document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
+        document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
+        document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
+    }
+    function Run2() {
+        var b = document.getElementById("Number").value;
+        if (b == CLEAR) {
+            localStorage.clear();
+        } else {
+            if (b == 1) {
+               localStorage.removeItem('a');
+            }
+           if (b == 2) {
+               localStorage.removeItem('b');
+           }
+           if (b == 3) {
+               localStorage.removeItem('c');
+           }
+           if (b == 4) {
+               localStorage.removeItem('d');
+           }
+           if (b == 5) {
+               localStorage.removeItem('e');
+        }
+        }
+    }
     }
 </script>
 </head>
@@ -29,8 +71,16 @@ img {position: relative;
 <body bgcolor = "black" onload="Run()">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
-<div id='DIV1'>Hello</div>
-<button type="button" id = "B1" onclick="Run()"> Continue</button>
+<p> <font color = "white">Password: <input id="Number"></input></p>
+
+<button type="button" id = "B1" onclick="Run()"> Add</button>
+<button type="button" id = "B2" onclick="Run2()"> Clear</button>
+    
+<div id='DIV1'></div>
+<div id='DIV2'></div>
+<div id='DIV3'></div>
+<div id='DIV4'></div>
+<div id='DIV5'></div>
     
 
 <ul>
