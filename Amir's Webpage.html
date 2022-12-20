@@ -20,7 +20,10 @@ img {position: relative;
 <script>
     function Run() {
         var a = document.createElement('a');
-        a.href = "https://www.geeksforgeeks.org";
+        var link = document.createTextNode("This is link");
+        a.appendChild(link); 
+        a.title = "This is Link"; 
+        a.href = "https://github.com"; 
         var password = document.getElementById("BOX");
         var passwordText = password.value;
         if (passwordText == "Minecraft100") {
