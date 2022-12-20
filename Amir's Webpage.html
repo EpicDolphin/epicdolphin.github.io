@@ -47,11 +47,13 @@ img {position: relative;
         document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
         document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
     }
-    document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
-    document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
-    document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
-    document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
-    document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
+    function Run2() {
+        localStorage.clear();
+        document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
+        document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
+        document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
+        document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
     }
 </script>
 </head>
