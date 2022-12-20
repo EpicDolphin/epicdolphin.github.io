@@ -19,11 +19,12 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
-        var a = document.getElementById("link");
+        var a = document.createElement('a');
+        a.href = "https://www.geeksforgeeks.org";
         var password = document.getElementById("BOX");
         var passwordText = password.value;
         if (passwordText == "Minecraft100") {
-            window.location.href = "https://github.com";
+            document.body.appendChild(a); 
     }
 </script>
 </head>
