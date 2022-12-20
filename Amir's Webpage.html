@@ -20,7 +20,8 @@ img {position: relative;
 <script>
     function Run() {
         var text = document.getElementById("BOX").value;
-        alert(text);
+        localStorage.setItem('a', text);
+        document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
     }
 </script>
 </head>
@@ -28,7 +29,7 @@ img {position: relative;
 <body bgcolor = "black" onload="Run()">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
-<div id='a'>Hello</div>
+<div id='DIV1'>Hello</div>
 <button type="button" id = "B1" onclick="Run()"> Continue</button>
     
 
