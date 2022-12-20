@@ -22,13 +22,14 @@ img {position: relative;
        var a = document.getElementById("BOX");
        var password = a.value;
        var x = document.getElementById("demo");
+       x.style.display = "none";
        if (password == 'Minecraft100') {
            x.style.display = "block";
     }
 </script>
 </head>
 
-<body bgcolor = "black">
+<body bgcolor = "black" onload="Run()">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Password: <input id="BOX"></input></p>
 <button type="button"
