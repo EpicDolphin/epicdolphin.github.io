@@ -23,8 +23,11 @@ img {position: relative;
        var password = a.value;
        var x = document.getElementById("demo");
        x.style.display = "none";
-       if (password == 'Minecraft100') {
-           x.style.display = "block";
+       if (x.style.display === "none") {
+          x.style.display = "block";
+       } else {
+          x.style.display = "none";
+  }
     }
 </script>
 </head>
