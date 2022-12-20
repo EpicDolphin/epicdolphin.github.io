@@ -7,8 +7,9 @@
 body {background-color: black}
 h1 {color: white; text-align: center; font-family: Arial,sans-serif}
 h2 {color: white; text-align: center; font-family: Arial,sans-serif}
-p {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif; visibility:'hidden'}
-a {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif; visibility:'hidden'}
+p {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
+a {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
+div {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
 ul {color: white; text-align: center; text-size: 20; font-family: Arial,sans-serif}
 img {position: relative;
     top: opx;
@@ -63,6 +64,11 @@ img {position: relative;
                localStorage.removeItem('e');
         }
     }
+    document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
+    document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
+    document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
+    document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
+    document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
     }
 </script>
 </head>
