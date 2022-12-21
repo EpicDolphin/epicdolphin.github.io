@@ -20,12 +20,48 @@ img {position: relative;
 </style> 
 <script>
     function Run() {
-        var text = document.getElementById("BOX").value;
+       var text = document.getElementById("BOX").value;
         var b = '1';
-        var newItem = document.createtElement("div");
-        newitem.innerHTML = document.getElementById("BOX").value;
-        newitem.onclick = removeItem;
-        document.getElementById("list").appendChild(newItem); 
+        if (b == '1') {
+            localStorage.setItem('a', text);
+            b = '2';
+        } else if (b == '2') {
+            localStorage.setItem('b', text);
+            b = '3';
+        } else if (b == '3') {
+            localStorage.setItem('c', text);
+            b = '4';
+        } else if (b == '4') {
+            localStorage.setItem('d', text);
+            b = '5';
+        } else if (b == '5') {
+            localStorage.setItem('e', text);
+            b = '6';
+        } else if (b == '6') {
+            localStorage.setItem('f', text);
+            b = '7';
+        } else if (b == '7') {
+            localStorage.setItem('g', text);
+            b = '8';
+        } else if (b == '8') {
+            localStorage.setItem('h', text);
+            b = '9';
+        } else if (b == '9') {
+            localStorage.setItem('i', text);
+            b = '10';
+        } else if (b == '10') {
+            localStorage.setItem('j', text);
+        }
+        document.getElementById("DIV1").innerHTML = localStorage.getItem('a');
+        document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
+        document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
+        document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('e');
+        document.getElementById("DIV1").innerHTML = localStorage.getItem('f');
+        document.getElementById("DIV2").innerHTML = localStorage.getItem('g');
+        document.getElementById("DIV3").innerHTML = localStorage.getItem('h');
+        document.getElementById("DIV4").innerHTML = localStorage.getItem('i');
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('j'); 
     }
     function Run2() {
         localStorage.clear();
@@ -33,7 +69,12 @@ img {position: relative;
         document.getElementById("DIV2").innerHTML = localStorage.getItem('b');
         document.getElementById("DIV3").innerHTML = localStorage.getItem('c');
         document.getElementById("DIV4").innerHTML = localStorage.getItem('d');
-        document.getElementById("DIV5").innerHTML = localStorage.getItem('e');  
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('e');
+        document.getElementById("DIV1").innerHTML = localStorage.getItem('f');
+        document.getElementById("DIV2").innerHTML = localStorage.getItem('g');
+        document.getElementById("DIV3").innerHTML = localStorage.getItem('h');
+        document.getElementById("DIV4").innerHTML = localStorage.getItem('i');
+        document.getElementById("DIV5").innerHTML = localStorage.getItem('j');  
     }
 </script>
 </head>
@@ -46,8 +87,16 @@ img {position: relative;
 <button type="button" id = "B1" onclick="Run()"> Add</button>
 <button type="button" id = "B2" onclick="localStorage.clear();"> Clear</button>
     
-<div id='list'></div>
-
+<div id='DIV1'></div>
+<div id='DIV2'></div>
+<div id='DIV3'></div>
+<div id='DIV4'></div>
+<div id='DIV5'></div>
+<div id='DIV6'></div>
+<div id='DIV7'></div>
+<div id='DIV8'></div>
+<div id='DIV9'></div>
+<div id='DIV10'></div>
 <iframe src="https://scratch.mit.edu" height="200" width="300" title="Iframe Example"></iframe>
     
 <ul>
