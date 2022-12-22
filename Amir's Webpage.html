@@ -73,14 +73,14 @@ background-color: #f1f1f1;
 padding: 10px;
 }
 </style>
-</head> 
+</head onload="checkCookie()"> 
 <body>
   <div class="topnav"> <a href="index.html"><b>Games</b></a>
     <a href="https://scratch.mit.edu"><b>Scratch</b></a>
     <a href="https://scratch.mit.edu/users/AmirLabScratch/"><b>About Me</b></a>
     <button type="button" onclick="checkCookie()">Sign In/Sign Up</button>
   </div>
-<div class="content" onload="checkCookie( this )">
+<div class="content" onclick="checkCookie( this )">
   <p id='Head'></p> 
 </div>
 <div class="footer"> 
