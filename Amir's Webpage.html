@@ -27,7 +27,7 @@ function getCookie(cname) {
 function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
-    document.getElementById('A').innerHTML = ("Welcome again " + user);
+    alert("Welcome again " + user);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
@@ -75,7 +75,11 @@ padding: 10px;
 </style>
 </head> 
 <body>
-  <div class="topnav"> <a href="index.html"><b>Games</b></a> <a href="https://scratch.mit.edu"><b>Scratch</b></a> <a href="https://scratch.mit.edu/users/AmirLabScratch/"><b>About Me</b></a></div>
+  <div class="topnav"> <a href="index.html"><b>Games</b></a>
+    <a href="https://scratch.mit.edu"><b>Scratch</b></a>
+    <a href="https://scratch.mit.edu/users/AmirLabScratch/"><b>About Me</b></a>
+    <button type="button" onclick="checkCookie()">Sign In/Sign Up</button>
+  </div>
 <div class="content"> 
   <p id='A'></p> 
 </div>
