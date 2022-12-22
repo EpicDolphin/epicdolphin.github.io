@@ -26,17 +26,17 @@ img {position: relative;
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
     function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
   return "";
 }
 
@@ -54,7 +54,7 @@ function checkCookie() {
 </script>
 </head>
 
-<body bgcolor = "black" onload="Run()">
+<body bgcolor = "black" onload="checkCookie()">
 <h1> <font color = "white">GitHub</h1>
 <p> <font color = "white">Text: <input id="BOX"></input></p>
 
