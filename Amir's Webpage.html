@@ -24,10 +24,10 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
+function checkCookie(x) {
   let user = getCookie("username");
   if (user != "") {
-    alert("Welcome again " + user);
+    x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
@@ -80,8 +80,8 @@ padding: 10px;
     <a href="https://scratch.mit.edu/users/AmirLabScratch/"><b>About Me</b></a>
     <button type="button" onclick="checkCookie()">Sign In/Sign Up</button>
   </div>
-<div class="content"> 
-  <p id='A'></p> 
+<div class="content" onclick="checkCookie( this )">
+  <p id='Head'></p> 
 </div>
 <div class="footer"> 
 <ul>
