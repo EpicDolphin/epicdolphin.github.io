@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
-<title>Main</title>
+<html lang="en">
+<head>
+<title>CSS Template</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -20,104 +21,42 @@ body {
   background-color: #333;
 }
 ​
-/* Style the topnav links */
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+float: left;
+display: block; color: #f2f2f2;
+text-align: center; padding: 14px 16px;
+text-decoration: none;
+Link
+Link
+Link
+CSS Template
+A topnav, content and a footer.
 }
-​
 /* Change color on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+background-color: #ddd;
+color: black;
 }
-​
-/* Style the content */
-.content {
-  background-color: #ddd;
-}
-​
+/* Style the content */ content §
+background-color: #ddd;
+padding: 10px;
+height: 200px; /* Should be removed. Only for demonstration */
+Footer
 /* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+footer {
+background-color: #f1f1f1;
+padding: 10px;
 }
-_topnav {overflow: hidden;background-color: #30c4ff;}
-.topnav a {float: left; display: block; color: #30c4ff; text-align: center; padding: 14px 16px; text-decoration: none;}
-.topnav a:hover {background-color: #ddd;color: black;}
-h1 {color: white; text-align: center; font-family: Arial,sans-serif}
-h2 {color: white; text-align: center; font-family: Arial,sans-serif}
-p {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
-a {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
-div {color: white; text-align: left; text-size: 20; font-family: Arial,sans-serif;}
-ul {color: white; text-align: center; text-size: 20; font-family: Arial,sans-serif}
-img {position: relative;
-    top: opx;
-    left: 630px;}
-#scratch_website {position: relative;
-    top: opx;
-    left: 50px;}
-</style> 
-<script>
-    function setCookie(cname, cvalue, exdays) {
-        const d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        let expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-    function getCookie(cname) {
-        let name = cname + "=";
-        let ca = document.cookie.split(';');
-        for(let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
-        }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-    var div =document.getElementById('DIV1');
-    div.parentNode.removeChild(div);
-    var div2 =document.getElementById('DIV2');
-    div2.parentNode.removeChild(div);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
-</script>
-</head>
-
-<body bgcolor = "black" onload="checkCookie()">
-    <div class="topnav">
-        <a href="index.html">Games</a>
-        <a href="https://scratch.mit.edu">Scratch</a>
-        <a href="https://scratch.mit.edu/users/AmirLabScratch/">About Me</a>
-    </div>
-    <div class="content">
-        <div id='DIV1'> <font color = "white">Text: <input id="BOX"></input></div>
-        <div id='DIV2'> <button type="button" id = "B1" onclick="checkCookie()"> Sign Up</button> </div> <br>
-        <div id='DIV3'></div>
-    </div>
-    <ul>
-        <li><a href="index.html"> <font color = "White" > Main Webpage </a> <br></li><br>
-    </ul>
-    </div>
-
+</style>
+</head> <body>
+‹div class="topnav"> <a href="index.html"›Link</a> <a href="https://scratch.mit.edu">Scratch</a> <a href="https://scratch.mit.edu/users/AmirLabScratch/">About Me</a>
+</div>
+‹div class="content"> 
+  <h2>CSS Template</h2>
+  <p>A topnav, content and a footer.</p> 
+</div>
+‹div class="footer"> 
+<p>Footer</p>
+</div>
 </body>
-
 </html>
