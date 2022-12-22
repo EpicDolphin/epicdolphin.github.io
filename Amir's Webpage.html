@@ -44,6 +44,8 @@ function checkCookie() {
   let user = getCookie("username");
   if (user != "") {
     alert("Welcome again " + user);
+    var div.getElementById('DIV1');
+    div.parentNode.removeChild(div);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
@@ -59,7 +61,7 @@ function checkCookie() {
 <div> <font color = "white">Text: <input id="BOX"></input></div>
 
 
-<div> <button type="button" id = "B1" onclick="checkCookie()"> Sign Up</button> </div>
+<div id='DIV1'> <button type="button" id = "B1" onclick="checkCookie()"> Sign Up</button> </div>
 
     
 <div id='DIV1'></div>
