@@ -37,8 +37,9 @@ function checkCookie() {
 }
 function Save(x) {
   const link = document.querySelector('a.dynamic');
-  let name = x.querySelector( '#NameBox' ).value;
-let text = x.querySelector( '#TextBox' ).value;
+  let name = document.getElementById( '#NameBox' ).value;
+  let text = document.getElementById( '#TextBox' ).value;
+  alert(text);
 
 link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
 
@@ -91,10 +92,13 @@ padding: 10px;
   </div>
 <div class="content">
   <p id='Head'>Please Sign In</p>
-  <input id='NameBox' value='Title'></input>
-  <textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
-  <button type="button" onclick="Save(this)">Save</button>
 </div>
+<input id='NameBox' value='Title'></input>
+<textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
+<button type="button" onclick="Save()">Save</button>
+<a download="monty.txt" href="data:text/plain;charset=utf-8,My name is Monty.">Download Text File with Name</a>
+
+<a class="dynamic">Download Multi-line Text File</a>
 <div class="footer"> 
 <ul>
 <li><a href="Games.html"> Main Webpage </a> <br></li><br>
