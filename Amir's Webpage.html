@@ -28,6 +28,7 @@ function checkCookie(x) {
   let user = getCookie("username");
   if (user != "") {
     x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
+    x.querySelector( '#Head2' ).innerHTML = <input id="BOX"></input>;
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
@@ -81,7 +82,12 @@ padding: 10px;
     <button type="button" onclick="checkCookie()">Sign In/Sign Up</button>
   </div>
 <div class="content" onclick="checkCookie( this )">
-  <p id='Head'>Please Sign In</p> 
+  <p id='Head'>Please Sign In</p>
+  <p id='Head2'></p>
+  <p id='Head3'></p>
+  <p id='Head4'></p>
+  <p id='Head5'></p>
+  <p id='Head5'></p>
 </div>
 <div class="footer"> 
 <ul>
