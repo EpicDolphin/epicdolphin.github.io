@@ -5,8 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-  function setCookie(cname, cvalue, data) {
-  document.cookie = cname + "=" + cvalue + ";" + "text" + data;
+  function setCookie(cname, cvalue) {
+  b = x.querySelector( '#TextBox' ).value;
+  document.cookie = cname + "=" + cvalue + ";" + "text" + b;
 }
 
 function getCookie(cname) {
@@ -34,7 +35,7 @@ function checkCookie(x) {
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
-      setCookie("username", user, "");
+      setCookie("username", user);
     }
   }
 }
@@ -86,7 +87,7 @@ padding: 10px;
 <div class="content" onclick="checkCookie( this )">
   <p id='Head'>Please Sign In</p>
   <textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
-  <button type="button" onclick="checkCookie()">Save</button>
+  <button type="button" onclick="setCookie()">Save</button>
 </div>
 <div class="footer"> 
 <ul>
