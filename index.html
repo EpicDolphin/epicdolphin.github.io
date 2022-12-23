@@ -6,19 +6,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
   function setCookie(cname, cvalue) {
-  b = x.querySelector( '#TextBox' ).value;
-  document.cookie = cname + "=" + cvalue + ";" + "text" + b;
+  let data = x.querySelector( '#Head' ).value;
+  document.cookie = cname + "=" + cvalue + ";" + data;
 }
 
-function checkCookie(x) {
-  let Cookie = document.cookie;
-  var y = Cookie.split("/");
-  let user = y[0];
-  let Cookie = replace(user, "");
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
   if (user != "") {
-    x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
-    x.querySelector( '#TextBox' ).innerHTML = a;
-    
+    alert("Welcome again " + user);
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
