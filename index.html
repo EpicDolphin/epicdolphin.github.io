@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
-  function setCookie(cname, cvalue) {
-  document.cookie = cname + "=" + cvalue;
+  function setCookie(cname, cvalue, data) {
+  document.cookie = cname + "=" + cvalue + ";" + "text" + data;
 }
 
 function getCookie(cname) {
@@ -26,12 +26,15 @@ function getCookie(cname) {
 
 function checkCookie(x) {
   let user = getCookie("username");
+  let a = getCookie("text");
   if (user != "") {
     x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
+    x.querySelector( '#TextBox' ).innerHTML = a;
+    
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
-      setCookie("username", user);
+      setCookie("username", user, "");
     }
   }
 }
@@ -87,7 +90,7 @@ padding: 10px;
 </div>
 <div class="footer"> 
 <ul>
-<li><a href="index.html"> Main Webpage </a> <br></li><br>
+<li><a href="Games.html"> Main Webpage </a> <br></li><br>
   </ul>
 </div>
 </body>
