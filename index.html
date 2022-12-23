@@ -7,7 +7,7 @@
 <script>
   function setCookie(cname, cvalue) {
   let data = x.querySelector( '#TextBox' ).value;
-  document.cookie = cname + "=" + cvalue + ";" + data;
+  document.cookie = cname + "=" + data;
 }
 
 function getCookie(cname) {
@@ -25,14 +25,14 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
-  let user = getCookie("username");
+function checkCookie(x) {
+  let user = getCookie("DATA");
   if (user != "") {
     alert("Welcome again " + user);
   } else {
-    user = prompt("Please enter your name:", "");
+    user = x.querySelector( '#TextBox' ).value;
     if (user != "" && user != null) {
-      setCookie("username", user);
+      setCookie("DATA", user);
     }
   }
 }
