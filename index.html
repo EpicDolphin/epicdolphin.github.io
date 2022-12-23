@@ -10,24 +10,11 @@
   document.cookie = cname + "=" + cvalue + ";" + "text" + b;
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
 function checkCookie(x) {
-  let user = getCookie("username");
-  let a = getCookie("text");
+  let Cookie = document.cookie;
+  var y = Cookie.split("/");
+  let user = y[0];
+  let Cookie = replace(user, "");
   if (user != "") {
     x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
     x.querySelector( '#TextBox' ).innerHTML = a;
