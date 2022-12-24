@@ -36,7 +36,7 @@ function checkCookie() {
   }
 }
 function Save() {
-  const link = document.querySelector('a.dynamic');
+  const link = document.getElementById('LINK');
   let name = document.getElementById('NameBox').value;
   let text = document.getElementById('TextBox').value;
   alert(text);
@@ -94,7 +94,7 @@ padding: 10px;
 <input id='NameBox' value='Title'></input>
 <textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
 <button type="button" onclick="Save()">Save</button><br>
-<a class="dynamic">Download Multi-line Text File</a>
+<a id='LINK'>Download</a>
 <div class="footer"> 
 <ul>
 <li><a href="Games.html"> Main Webpage </a> <br></li><br>
