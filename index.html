@@ -24,9 +24,10 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
+function checkCookie(x) {
   let user = getCookie("username");
   if (user != "") {
+    x.querySelector( '#Head' ).innerHTML = ("Welcome again " + user);
     alert("Welcome, " + user);
   } else {
     user = prompt("Please enter your name:", "");
@@ -39,7 +40,6 @@ function Save() {
   const link = document.getElementById('LINK');
   let name = document.getElementById('NameBox').value;
   let text = document.getElementById('TextBox').value;
-  alert(text);
   link.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
   link.setAttribute('download', `${name.toLowerCase()}.txt`);
 }
@@ -88,12 +88,12 @@ padding: 10px;
     <a href="https://scratch.mit.edu/users/AmirLabScratch/"><b>About Me</b></a>
     <button type="button" onclick="checkCookie()">Sign In/Sign Up</button>
   </div>
-<div class="content">
+<div class="content" onclick='checkCookie(this)'>
   <p id='Head'>Please Sign In</p>
 </div>
 <input id='NameBox' value='Title'></input><br>
 <textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
-<button type="button" onclick="Save()">Save</button><br>
+<button type="button" onclick="Save()">Save</button><br><br>
 <a id='LINK'>Download</a>
 <div class="footer"> 
 <ul>
