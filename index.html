@@ -8,7 +8,6 @@
   function setCookie(cname, cvalue, exdays) {
   document.cookie = cname + "=" + cvalue;
 }
-
 function getCookie(cname) {
   let name = cname + "=";
   let ca = document.cookie.split(';');
@@ -23,7 +22,6 @@ function getCookie(cname) {
   }
   return "";
 }
-
 function checkCookie(x) {
   let user = getCookie("username");
   if (user != "") {
@@ -52,13 +50,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #307bf2;
 }
-
 .topnav a {
 float: left;
 display: block; color: #f2f2f2;
@@ -72,13 +68,14 @@ color: black;
 }
 /* Style the content */
 .content {
-  padding: 10px;}
-/* Style the footer */
-footer {
-background-color: rgb(212, 212, 212);
-padding: 10px;
-}
-</style>
+   padding: 10px;}
+ /* Style the footer */
+ footer {
+ background-color: grey;
+ background-color: rgb(212, 212, 212);
+ padding: 10px;
+ }
+ </style>
   </head> 
 <body>
   <div class="topnav"> <a href="Games.html"><b>Games</b></a>
@@ -88,11 +85,11 @@ padding: 10px;
   </div>
 <div class="content" onclick='checkCookie(this)'>
   <p id='Head'>Please Sign In</p>
-  </input><br>
-  <textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
-  <button type="button" onclick="Save()">Save</button><br><br>
-  <a id='LINK'>Download</a>
-  </div>
+</div>
+<input id='NameBox' value='Title'></input><br>
+<textarea id="TextBox" name="freeform" rows="10" cols="50"></textarea><br>
+<button type="button" onclick="Save()">Save</button><br><br>
+<a id='LINK'>Download</a>
 <div class="footer"> 
   <a href="Games.html"> Main Webpage </a> <br></li><br>
 </div>
