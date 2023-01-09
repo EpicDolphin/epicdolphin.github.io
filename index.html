@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <title>Search</title>
-   <script>
-    function doSearch (x) {
-      document.write('<a href="https://www.bing.com/search?q='+x+'&PC=U316&FORM=CHROMN"')
-    }
+<input id='searchbox'>
+<button onclick='doSearch(searchbox.value) '>Search</button>
+<script>
+var webData [
+	{tag: 'videos', url: 'https://www.youtube.com' },
+	{tag: 'facts', url: 'https://en.wikipedia.org' },
+  {tag: 'news', url: 'https://www.bbc.co.uk' }
+function doSearch (x) {
+  for (n=0; n webData. length; n++) {
+    if (x == webData [n] . tag) {
+      document. write('<a href="'+webData[n]. url+' ">'+webData[n].url+'</a>')
   </script>
-  <input id= 'searchbox'>
-  <button onclick= 'doSearch(searchbox.value)'>Search</button>
-</html>
+	</html>
