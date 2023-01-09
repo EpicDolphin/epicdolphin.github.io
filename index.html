@@ -6,10 +6,13 @@
 var webData [
 	{tag: 'videos', url: 'https://www.youtube.com' },
 	{tag: 'facts', url: 'https://en.wikipedia.org' },
-  {tag: 'news', url: 'https://www.bbc.co.uk' }
+  {tag: 'news', url: 'https://www.bbc.co.uk' }]
 function doSearch (x) {
   for (n=0; n webData. length; n++) {
     if (x == webData [n] . tag) {
       document. write('<a href="'+webData[n]. url+' ">'+webData[n].url+'</a>')
+    }
+  }
+}
   </script>
 	</html>
