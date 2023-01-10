@@ -6,13 +6,7 @@ var WebData = [
 function Search(x) {
 for(a=0; a<WebData.length;a++){
 	if (x==WebData[a].tag) {
-		var LINK = document.createElement('a');
-                var linkText = document.createTextNode("SEARCH");
-                LINK.appendChild(linkText);
-                LINK.title = "SEARCH";
-                LINK.href = WebData[a].url;
-                document.body.appendChild(LINK);
-		document.write('<a href='"+WebData[a].url+"'>'"+WebData[a].url+"'</a>');
+		document.write('<a href="' webData[a] .url +'">' webData[a].url+'</a>')
 		}
 		}
 		}
