@@ -2,18 +2,22 @@
  <html>
  <script>
  var WebData = [
- {tag: 'videos', 'youtube', 'video',url:'https://www.youtube.com'},
- {tag: 'w3schools', 'w3', 'coding',url:'https://www.w3schools.com'},
- {tag: 'education', 'scratch', 'coding',url:'https://scratch.mit.edu'},];
+ {tag: 'videos',tag2: 'youtube',tag3: 'video',url:'https://www.youtube.com'},
+ {tag: 'w3schools',tag2: 'w3',tag3: 'coding',url:'https://www.w3schools.com'},
+ {tag: 'education',tag2: 'scratch',tag3: 'coding',url:'https://scratch.mit.edu'},];
  function Search(x) {
  for(a=0; a<WebData.length;a++){
-  for(b=0; b<WebData.tag.length;b++){
- 	   if (x==WebData[a].tag) {
+  if (x==WebData[a].tag) {
  		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
- 		}
   }
- 		}
- 		}
+   if (x==WebData[a].tag2) {
+ 		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+   }
+    if (x==WebData[a].tag3) {
+ 		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+    }
+ }
+ }
  </script>
  <input id='searchbox'>
  <button onclick='Search(searchbox.value)'>Search</button>
