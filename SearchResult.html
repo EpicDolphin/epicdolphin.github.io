@@ -50,6 +50,10 @@ body {
   padding: 10px;
 }
 </style>
+  <script>
+    function getDATA() {
+      var newURL = localStorage.getItem('data');
+      document.getElementById("link").href = newURL;
 </head>
 <body>
 
@@ -61,6 +65,7 @@ body {
 <div class="content">
   <h2>Result</h2>
 </div>
+<a id='link' href='index.html'>Go</a>
 
 <div class="footer">
   <p>Footer</p>
