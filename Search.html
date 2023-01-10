@@ -55,7 +55,10 @@ input {
  function Search(x) {
  for(a=0; a<WebData.length;a++){
   if (x==WebData[a].tag) {
- 		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+         var c = document.createElement('a');
+         c.setAttribute('href',('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>'));
+         c.innerHTML = ('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+         document.getElementsById('info').appendChild(a);
   }
    if (x==WebData[a].tag2) {
  		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
@@ -76,6 +79,7 @@ input {
 <div class="content">
   <input id='searchbox'>
  <button onclick='Search(searchbox.value)'>Search</button>
+ <div id='info'></div>
 </div>
 
 <div class="footer">
