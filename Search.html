@@ -61,7 +61,10 @@ input {
          window.open("SearchResult.html");
   }
    if (x==WebData[a].tag2) {
- 		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+ 		      window.localStorage.clear();
+         window.localStorage.setItem('data',WebData[a].url);
+         document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+         window.open("SearchResult.html");
    }
     if (x==WebData[a].tag3) {
  		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
