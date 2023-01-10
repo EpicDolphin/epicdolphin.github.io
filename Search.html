@@ -7,9 +7,11 @@
  {tag: 'education', 'scratch', 'coding',url:'https://scratch.mit.edu'},];
  function Search(x) {
  for(a=0; a<WebData.length;a++){
- 	if (x==WebData[a].tag) {
- 		document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
+  for(b=0; b<WebData.tag.length;b++){
+ 	   if (x==WebData[a].tag) {
+ 		      document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
  		}
+  }
  		}
  		}
  </script>
