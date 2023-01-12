@@ -55,10 +55,12 @@ input {
  function Search(x) {
  for(a=0; a<WebData.length;a++){
   if (x==WebData[a].tag) {
-         window.localStorage.clear();
-         window.localStorage.setItem('data',WebData[a].url);
-         document.write('<a href="'+WebData[a].url+'">'+WebData[a].url+'</a>');
-         window.open("SearchResult.html");
+   var a = document.createElement('a');
+   var link = document.createTextNode("Link");
+   a.appendChild(link); 
+   a.title = "Link"; 
+   a.href = "https://www.geeksforgeeks.org";
+   document.getElementByClassName('content').appendChild(a); 
   }
    if (x==WebData[a].tag2) {
  		      window.localStorage.clear();
