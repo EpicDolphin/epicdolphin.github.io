@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Main Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+    function Search() {
+      var A = document.getElementById("Box").value;
+      window.open("https://www.google.com/search?q=" + A);
+      
+    }
+  </script>
+</head>
+
+<body>
+  
+  <p><b>                   Hello, Amir</b></p>
+  <br>
+  <br>
+  <div>
+    <textarea id="Box" rows="1" cols="150">
+    </textarea>
+    <button onclick="Search()">Search</button>
+  </div>
+  <br>
+  <br>
+  
+  <div>
+    <img src="A.png" width="120" height="120">
+    <a href="https://github.com"><img src="GitHub.png" width="120" height="120"> </a>
+    <img src="A.png" width="120" height="120">
+    <a href="https://scratch.mit.edu"><img src="scratch.png" width="120" height="120"> </a>
+    <img src="A.png" width="120" height="120">
+    <a href="https://www.youtube.com"><img src="YouTube.png" width="120" height="120"> </a>
+    <img src="A.png" width="120" height="120">
+    <a href="https://replit.com/"><img src="replit.png" width="120" height="120"> </a>
+  </div>
+  <br>
+  <br>
+  <br>
+  <a class="weatherwidget-io" href="https://forecast7.com/en/55d86n4d25/glasgow/" data-label_1="GLASGOW" data-label_2="WEATHER" data-font="Arial Rounded MT Bold" data-icons="Climacons Animated" data-mode="Current" data-textcolor="#ffffff" >GLASGOW WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</body>
+
+</html>
+  
